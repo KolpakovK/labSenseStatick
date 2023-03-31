@@ -1,0 +1,18 @@
+i{
+	display: block;
+	width: 20px;
+	height: 20px;
+	margin: 0px;
+}
+
+i.phone{
+	background: url("../src/icons/phone.svg");
+}
+
+i.price{
+	background: url("../src/icons/price.svg");
+}
+
+i.plus{
+	background: url("../src/icons/plus.svg");
+}
