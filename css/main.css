@@ -515,6 +515,55 @@ li.a span{
   margin-bottom: 16px;
 }
 
+.humburger input[type="checkbox"]{
+  height: 18px;
+  width: 24px;
+  position: absolute;
+  top: 3px;
+  right: 0px;
+  z-index: 3;
+}
+
+.hamburger-lines {
+  display: block;
+  height: 18px;
+  width: 24px;
+  position: absolute;
+  top: 3px;
+  right: 0px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hamburger-lines .line {
+  display: block;
+  height: 2px;
+  width: 100%;
+  border-radius: 10px;
+  background: #0e2431;
+}
+
+.hamburger-lines .line1 {
+  transform-origin: 0% 0%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.hamburger-lines .line2 {
+  transition: transform 0.2s ease-in-out;
+}
+
+.hamburger-lines .line3 {
+  transform-origin: 0% 100%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.hide-lg{
+    display: none;
+  }
+
+
 
 @media only screen and (max-width: 1240px) {
   /* For small desktop: */
@@ -559,6 +608,8 @@ li.a span{
   .show-lg{
     display: block;
   }
+
+  
 
 }
 
@@ -667,6 +718,14 @@ li.a span{
   .container{
     width: 35em;
   }
+
+  #navs{
+    width: 100%;
+    padding: 24px;
+    background: var(--white);
+    border-radius: 24px;
+    margin-top: 12px;
+  }
 }
 
 @media only screen and (max-width: 650px) {
@@ -719,6 +778,8 @@ li.a span{
   .xs-full{
     width: 100%;
   }
+
+
 
 }
 

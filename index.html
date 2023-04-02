@@ -6,6 +6,8 @@
 
 	<title>LabSense</title>
 
+	<link rel="icon" type="x-files" href="src/logo.ico"/>
+
 	<link rel="stylesheet" href="css/grid/flexboxgrid.min.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/icons.css">
@@ -15,27 +17,36 @@
 <body>
 	
 	<!-- header -->
-	<div class="row container middle-md">
+	<div class="row container middle-md" style="position: relative;">
 
 		<div class="col-md-3">
 			<img src="src/logo.svg" alt="Logo" class="logo-img">
 		</div>
 		
-		<div class="col-md-4 flex-inline hide-md">
+		<div class="col-md-4 flex-inline hide-md" id="navs">
 			<a class="btn btn-link active-tab" href="#">Home</a>
 			<a class="btn btn-link" href="services.html">Services</a>
 			<a class="btn btn-link" href="company.html">Company</a>
 			<a class="btn btn-link" href="faq.html">FAQ</a>
 		</div>
 
+		<div class="hide-lg show-xs humburger">
+			<input class="checkbox" type="checkbox" name="" id="menu" style="opacity: 0;" />
+			<div class="hamburger-lines">
+				<span class="line line1"></span>
+				<span class="line line2"></span>
+				<span class="line line3"></span>
+			</div>
+		</div>
+
 		<div class="col-md-5 flex-inline flex-end hide-md">
 
-			<a href="#" class="btn btn-outline">
+			<a href="tel:385-091-3567-932" class="btn btn-outline">
 				<i class="phone"></i>
-				+385 000 0000 000
+				+385 (091) 3567 932
 			</a>
 
-			<a href="#" class="btn open-modal">
+			<a href="mailto:antonija.beneta@labsense.hr" class="btn">
 				<i class="price"></i>
 				Request pricing
 			</a>
@@ -55,7 +66,7 @@
 			</div>
 
 			<div class="col-md-3 flex-end">
-				<a href="#" class="btn btn-green open-modal">
+				<a href="mailto:antonija.beneta@labsense.hr" class="btn btn-green">
 					Contact us for a consultation
 				</a>
 			</div>
@@ -183,7 +194,7 @@
 				Contact us today to learn more.
 			</p>
 
-			<a href="#" class="btn btn-green open-modal" style="width: fit-content; align-self: center;">
+			<a href="mailto:antonija.beneta@labsense.hr" class="btn btn-green" style="width: fit-content; align-self: center;">
 				Contact us for a consultation
 			</a>
 
@@ -213,9 +224,10 @@
 
 			<div class="col-xs-12 col-md-4 flex-column-8">
 				
-				<h4 class="text-dark-blue text-center-xs">+385 000 0000 000</h4>
-				<h4 class="text-dark-blue text-center-xs">Adress, City, Country</h4>
-				<h4 class="text-dark-blue text-center-xs">mail@domain.com</h4>
+				<h4 class="text-dark-blue text-center-xs">+385 (091) 3567 932</h4>
+				<h4 class="text-dark-blue text-center-xs">Ivekovićeva 19/10000 Zagreb/Croatia</h4>
+				<h4 class="text-dark-blue text-center-xs">OIB: 29765016403</h4>
+				<a href="mailto:antonija.beneta@labsense.hr"><h4 class="text-dark-blue text-center-xs">antonija.beneta@labsense.hr</h4></a>
 
 			</div>
 
@@ -375,6 +387,10 @@
 				$("#modal").hide();
 				$("#modal-shade").hide();
 			});
+
+			$(".humburger input").click(()=>{
+				$("#navs").toggle(this.checked);
+			})
 		});
 	</script>
 </body>

@@ -6,6 +6,8 @@
 
 	<title>Company</title>
 
+	<link rel="icon" type="x-files" href="src/logo.ico"/>
+
 	<link rel="stylesheet" href="css/grid/flexboxgrid.min.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/icons.css">
@@ -15,27 +17,36 @@
 <body>
 	
 	<!-- header -->
-	<div class="row container middle-md">
+	<div class="row container middle-md" style="position: relative;">
 
 		<div class="col-md-3">
 			<img src="src/logo.svg" alt="Logo" class="logo-img">
 		</div>
 		
-		<div class="col-md-4 flex-inline hide-md">
+		<div class="col-md-4 flex-inline hide-md" id="navs">
 			<a class="btn btn-link" href="index.html">Home</a>
 			<a class="btn btn-link" href="services.html">Services</a>
 			<a class="btn btn-link active-tab" href="#">Company</a>
 			<a class="btn btn-link" href="faq.html">FAQ</a>
 		</div>
 
+		<div class="hide-lg show-xs humburger">
+			<input class="checkbox" type="checkbox" name="" id="menu" style="opacity: 0;" />
+			<div class="hamburger-lines">
+				<span class="line line1"></span>
+				<span class="line line2"></span>
+				<span class="line line3"></span>
+			</div>
+		</div>
+
 		<div class="col-md-5 flex-inline flex-end hide-md">
 
-			<a href="#" class="btn btn-outline">
+			<a href="tel:385-091-3567-932" class="btn btn-outline">
 				<i class="phone"></i>
-				+385 000 0000 000
+				+385 (091) 3567 932
 			</a>
 
-			<a href="#" class="btn open-modal">
+			<a href="mailto:antonija.beneta@labsense.hr" class="btn">
 				<i class="price"></i>
 				Request pricing
 			</a>
@@ -55,7 +66,7 @@
 			</div>
 
 			<div class="col-md-3 flex-end">
-				<a href="#" class="btn btn-green open-modal">
+				<a href="mailto:antonija.beneta@labsense.hr" class="btn btn-green">
 					Contact us for a consultation
 				</a>
 			</div>
@@ -119,7 +130,7 @@
 					Whether you are looking for turnkey solutions, equipment optimization, compliance guidance, or consulting services, we are here to help. Contact us today to learn more about how we can help your lab reach its full potential.
 				</p>
 
-				<a href="#" class="btn open-modal" style="align-self: center;">Contact us</a>
+				<a href="mailto:antonija.beneta@labsense.hr" class="btn" style="align-self: center;">Contact us</a>
 				
 			</div>
 
@@ -159,16 +170,23 @@
 			</div>
 
 		</div>
-		<div class="col-md-6 card flex-column-16">
+		<div class="col-md-6 card flex-column-16" style="height: fit-content;">
 			
 			<h3 class="text-dark-blue">OPEN APPLICATION</h3>
 
 			<p class="text-grey">
 				We are looking forward to speaking with you. Please fill in the form below.
+				<br><br>
+				When you click on the button below, please provide your contact information and attach your resume and cover letter. This is necessary so that we can get in touch with you and review your resume and cover letter.
+				<br><br>
+				Please provide your full name, phone number, and any other information you deem important for us to contact you. Also, please make sure that you have attached your resume and cover letter in PDF or Microsoft Word format.
+				<br><br>
+				We appreciate your interest in working for our company and look forward to receiving your contact information and resume. If you have any questions or difficulties, please do not hesitate to contact us directly.
 			</p>
 
 			<form action="" class="flex-column-16">
-				<div class="flex-inline-fill">
+
+				<!-- <div class="flex-inline-fill">
 					<div class="input">
 						<label for="full-name">Full name</label>
 						<input type="text" name="" id="full-name">
@@ -189,9 +207,9 @@
 				<div class="input">
 					<label for="message">Message (optional)</label>
 					<textarea name="" id="message" cols="30" rows="10"></textarea>
-				</div>
+				</div> -->
 
-				<a href="#" class="btn btn-green" style="align-self: flex-start;">Submit an application</a>
+				<a href="mailto:antonija.beneta@labsense.hr" class="btn btn-green" style="align-self: flex-start;">Open an application</a>
 			</form>
 
 		</div>
@@ -227,15 +245,16 @@
 			</p>
 
 			<div class="flex-inline-fill">
-				<h4 class="text-white text-center-xs" style="text-align: center;">+385 000 0000 000</h4>
-				<h4 class="text-white text-center-xs" style="text-align: center;">Adress, City, Country</h4>
-				<h4 class="text-white text-center-xs" style="text-align: center;">mail@domain.com</h4>
+				<h5 class="text-white text-center-xs" style="text-align: center;">+385 (091) 3567 932</h5>
+				<h5 class="text-white text-center-xs" style="text-align: center;">Ivekovićeva 19/10000 Zagreb/Croatia</h5>
+				<h5 class="text-white text-center-xs" style="text-align: center;">antonija.beneta@labsense.hr</h5>
 			</div>
 
 			<div style="height: 16px;"></div>
 
 			<form action="" class="flex-column-16" style="z-index: 2; margin: 0 auto;">
-				<div class="flex-inline-fill">
+
+				<!-- <div class="flex-inline-fill">
 					<div class="input">
 						<label for="full-name" style="color: var(--white); text-align: left;">Full name</label>
 						<input type="text" name="" id="full-name">
@@ -255,9 +274,9 @@
 				<div class="input">
 					<label for="message" style="color: var(--white); text-align: left;">Message (optional)</label>
 					<textarea name="" id="message" cols="30" rows="5"></textarea>
-				</div>
+				</div> -->
 
-				<a href="#" class="btn btn-green open-modal" style="align-self: center;">Send</a>
+				<a href="mailto:antonija.beneta@labsense.hr" class="btn btn-green" style="align-self: center;">Contact us</a>
 			</form>
 
 
@@ -286,9 +305,10 @@
 
 			<div class="col-xs-12 col-md-4 flex-column-8">
 				
-				<h4 class="text-dark-blue text-center-xs">+385 000 0000 000</h4>
-				<h4 class="text-dark-blue text-center-xs">Adress, City, Country</h4>
-				<h4 class="text-dark-blue text-center-xs">mail@domain.com</h4>
+				<h4 class="text-dark-blue text-center-xs">+385 (091) 3567 932</h4>
+				<h4 class="text-dark-blue text-center-xs">Ivekovićeva 19/10000 Zagreb/Croatia</h4>
+				<h4 class="text-dark-blue text-center-xs">OIB: 29765016403</h4>
+				<a href="mailto:antonija.beneta@labsense.hr"><h4 class="text-dark-blue text-center-xs">antonija.beneta@labsense.hr</h4></a>
 
 			</div>
 
@@ -447,6 +467,10 @@
 				$("#modal").hide();
 				$("#modal-shade").hide();
 			});
+
+			$(".humburger input").click(()=>{
+				$("#navs").toggle(this.checked);
+			})
 		});
 	</script>
 </body>
